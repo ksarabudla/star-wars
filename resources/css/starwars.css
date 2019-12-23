@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#000;
+    color:#fff;
+}
+.header {
+    width:100%;
+}
+.header#title{
+
+}
+#logo{
+    width: 346px;
+    height: 209px;
+    top: 133px;
+}
+#button{
+    width: 35%;
+    height: 80px;
+    position: relative;
+    box-shadow: 10px 7px 13px 10px #0ff;
+    background: #FFE81F;
+    border-radius: 5px;
+}
+#navi, #infoi {
+    width: 104%;
+    height: 96px;
+    top: 420px;
+    background: #C2AE00;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#infoi {
+    height: 80px;
+    background: #FFE81F;
+    border-radius: 10px;
+    z-index: 10;
+    color:#000;
+    text-align: center;
+}
+#infotext{
+    position:absolute;
+    margin-top:25px;
+    text-align: center;
+    width:100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+#infoi:hover {
+    height: 85px;
+    background: #FDED63;
+    color:#C2AE00;
+    cursor: pointer;
+}
+#button .infoihover {
+    height: 90px;
+    background: #FDED63;
+    color:#C2AE00;
+    cursor: pointer;
+}
+#questions{
+    margin-top:100px;
+    width:40%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.answers{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFE81F;
+}

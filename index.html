@@ -3,71 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="resources/css/starwars.css" rel="stylesheet">
     <title>StarWars</title>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color:#000;
-            color:#fff;
-        }
-        .header {
-            width:100%;
-        }
-        .header#title{
-
-        }
-        #logo{
-            width: 346px;
-            height: 209px;
-            top: 133px;
-        }
-        #button{
-            width: 35%;
-            height: 80px;
-            position: relative;
-            box-shadow: 10px 7px 13px 10px #0ff;
-            background: #FFE81F;
-            border-radius: 5px;
-        }
-        #navi, #infoi {
-            width: 104%;
-            height: 96px;
-            top: 420px;
-            background: #C2AE00;
-            border-radius: 10px;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        #infoi {
-            height: 80px;
-            background: #FFE81F;
-            border-radius: 10px;
-            z-index: 10;
-            color:#000;
-            text-align: center;
-        }
-        #infotext{
-            position:absolute;
-            margin-top:25px;
-            text-align: center;
-            width:100%;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 28px;
-        }
-        #infoi:hover {
-            height: 85px;
-            background: #FDED63;
-            color:#C2AE00;
-        }
-        #questions{
-
-            padding-top:20px;
-            width:40%;
-        }
-    </style>
+    <script src="resources/js/jquery.js"></script>
+    <script src="resources/js/starwars.js"></script>
 </head>
 <body>
 <div class="content" align="center">
@@ -76,7 +15,7 @@
     </div>
     <div class="body">
         <h1>
-            <img src="resources/images/logo.webp"  alt="StarWars" id="logo" />
+            <img src="resources/images/logo.png"  alt="StarWars" id="logo" />
         </h1>
         <div id="button">
             <div id="navi"></div>
@@ -87,36 +26,31 @@
             </div>
         </div>
     </div>
-    <div id="questions">
+    <div id="questions" style="display:none">
         <div id="question1">
             Which of all StarWars movies has longest opening crawl?
-            Return of the Jedi
         </div>
-
+        <div id="answer1" class="answers">
+            Loading<span class="loadingDots"></span>
+        </div>
         <div id="question2">
             What character (person) appeared in the most of StarWars films?
-
-            Yoda
         </div>
-
+        <div id="answer2" class="answers">
+            Loading<span class="loadingDots"></span>
+        </div>
         <div id="question3">
-
             What species appeared in the most number of StarWars films?
-
-            Human (5)
-            Human (5)
-            Human (5)
         </div>
-
+        <div id="answer3" class="answers">
+            Loading<span class="loadingDots"></span>
+        </div>
         <div id="question4">
             What planet in StarWars universe provided largest number of vehicle pilots?
-
-            Planet: Earth - Pilots: (12) Han Solo - Human, Yoda - Yodi
-            Planet: Earth - Pilots: (12) Han Solo - Human, Yoda - Yodi
-            Planet: Earth - Pilots: (12) Han Solo - Human, Yoda - Yodi
-            Planet: Earth - Pilots: (12) Han Solo - Human, Yoda - Yodi
         </div>
-
+        <div id="answer4" class="answers">
+            Loading<span class="loadingDots"></span>
+        </div>
     </div>
     <div class="footer"></div>
 </div>
